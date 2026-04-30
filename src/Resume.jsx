@@ -21,7 +21,7 @@ export default function Resume() {
         <div style={{ marginBottom: '20px' }}>
           <h3 style={{ margin: '0 0 8px 0', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', color: '#111', borderBottom: '1px solid #d4af37', paddingBottom: '4px' }}>SUMMARY</h3>
           <p style={{ margin: '0', fontSize: '13px', lineHeight: '1.6', color: '#222' }}>
-            Motivated BCA student with foundational knowledge of HTML, CSS, JavaScript, and currently learning <u>React.js</u>. Passionate about building responsive and user-friendly web applications. Eager to apply frontend development skills in a real-world environment and continuously improve through hands-on projects.
+            Motivated BCA student with foundational knowledge of HTML, CSS, JavaScript, and currently learning React.js. Passionate about building responsive and user-friendly web applications. Eager to apply frontend development skills in a real-world environment and continuously improve through hands-on projects.
           </p>
         </div>
 
@@ -90,7 +90,7 @@ export default function Resume() {
           <h3 style={{ margin: '0 0 10px 0', fontSize: '14px', fontWeight: 'bold', textTransform: 'uppercase', color: '#111', borderBottom: '1px solid #d4af37', paddingBottom: '4px' }}>ADDITIONAL INFORMATION</h3>
           <ul style={{ margin: '0', paddingLeft: '20px', fontSize: '13px', color: '#222', lineHeight: '1.7' }}>
             <li><strong>Languages:</strong> English, Kannada, Hindi</li>
-            <li>Currently learning <strong><u>React.js</u></strong> and modern frontend development</li>
+            <li>Currently learning <strong>React.js</strong> and modern frontend development</li>
             <li>Familiar with <strong>Git</strong> and <strong>GitHub</strong> for version control</li>
             <li>Experience in working with <strong>REST API</strong>s and asynchronous JavaScript</li>
             <li>Deployed projects using <strong>AWS</strong></li>
