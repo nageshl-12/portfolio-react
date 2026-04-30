@@ -525,7 +525,7 @@ function App() {
                 <div className="edu-card glass-card" ref={el => eduTilltRefs.current[0] = el}>
                   <i className="fas fa-graduation-cap edu-icon"></i>
                   <h4>Bachelor of Computer Applications</h4>
-                  <h5>Vidya Vikas Institute of Engineering and Technology, Mysore</h5>
+                  <h5>Vidya Vikas First Grade College, Mysore</h5>
                   <span className="year">2023 - 2026</span>
                   <p>Computer Applications</p>
                 </div>
