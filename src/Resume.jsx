@@ -104,7 +104,7 @@ export default function Resume() {
           </h3>
           <p style={{ margin: "0", fontSize: "13px", color: "#222" }}>
             HTML, CSS, Tailwind CSS, JavaScript (ES6+), React.js (Learning),
-            Git, Java(Basic), GitHub
+            Git, GitHub, Vercel
           </p>
         </div>
 
@@ -301,7 +301,7 @@ export default function Resume() {
               asynchronous JavaScript
             </li>
             <li>
-              Deployed projects using <strong>AWS</strong>
+              Deployed projects using <strong>AWS & Vercel</strong>
             </li>
           </ul>
         </div>
