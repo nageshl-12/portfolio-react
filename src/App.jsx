@@ -795,13 +795,11 @@ function App() {
                         "https://github.com/nageshl-12/-Currency-Converter-",
                     },
                     {
-                      title: "Auth UI",
-                      desc: "A secure and responsive authentication UI with seamless sign-in and sign-up flows.",
-                      icon: "fa-user-lock",
-                      demoLink:
-                        "https://nageshl-12.github.io/auth-ui-signin-signup/",
-                      codeLink:
-                        "https://github.com/nageshl-12/auth-ui-signin-signup",
+                      title: "React Todo App",
+                      desc: "A feature-rich Todo App with task creation, editing, completion tracking, and Local Storage persistence.",
+                      icon: "fa-list-check",
+                      demoLink: "https://todo-app-react-v1.vercel.app/",
+                      codeLink: "https://github.com/nageshl-12/react-todo-app",
                     },
                   ].map((proj, idx) => (
                     <div
