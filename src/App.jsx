@@ -746,7 +746,7 @@ function App() {
                 <h2 className="section-title">About Me</h2>
                 <div className="glass-card about-card">
                   <p>
-                    I am a BCA student and Frontend Developer (Fresher) skilled
+                    I am a BCA Graduate and Frontend Developer (Fresher) skilled
                     in HTML, CSS, and JavaScript, currently learning React.js. I
                     enjoy building responsive web applications and improving my
                     skills through practical projects. I am eager to start my
