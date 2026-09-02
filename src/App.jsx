@@ -3,6 +3,7 @@ import * as THREE from "three";
 import gsap from "gsap";
 import VanillaTilt from "vanilla-tilt";
 import Resume from "./Resume";
+import Certificates from "./Certificates";
 
 function App() {
   const [navActive, setNavActive] = useState(false);
@@ -336,7 +337,7 @@ function App() {
     history.pushState(null, null, targetId);
     setCurrentHash(targetId);
 
-    if (targetId === "#resume") {
+    if (targetId === "#resume" || targetId === "#certificates" || targetId === "#certificate") {
       window.scrollTo(0, 0);
       return;
     }
@@ -431,6 +432,8 @@ function App() {
 
       {currentHash === "#resume" ? (
         <Resume />
+      ) : currentHash === "#certificates" || currentHash === "#certificate" ? (
+        <Certificates />
       ) : (
         <>
           {/* WhatsApp DP style Modal */}
@@ -580,6 +583,15 @@ function App() {
                       style={{ marginRight: "15px", marginBottom: "15px" }}
                     >
                       View Resume
+                    </a>
+                    <a
+                      href="#certificates"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-primary"
+                      style={{ marginRight: "15px", marginBottom: "15px" }}
+                    >
+                      Certificates
                     </a>
                     <a
                       href="#contact"

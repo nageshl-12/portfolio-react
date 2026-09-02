@@ -122,6 +122,12 @@ canvas#bg-canvas {
     transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -1081,6 +1087,10 @@ footer {
     .hero-desc {
         font-size: 0.95rem;
         margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+        justify-content: center;
     }
 
     .btn {
