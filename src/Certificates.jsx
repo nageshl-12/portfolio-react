@@ -364,59 +364,12 @@ export default function Certificates() {
           ))}
         </div>
 
-        {/* Bottom Actions (Hidden in print) */}
-        <div
-          className="no-print"
-          style={{
-            textAlign: "center",
-            marginTop: "35px",
-            paddingTop: "20px",
-            borderTop: "1px solid #e2e8f0",
-            display: "flex",
-            justifyContent: "center",
-            gap: "15px",
-            flexWrap: "wrap",
-          }}
-        >
-          <a
-            href="#"
-            onClick={handleBackToPortfolio}
-            style={{
-              display: "inline-block",
-              padding: "10px 24px",
-              backgroundColor: "#0f172a",
-              color: "#fff",
-              textDecoration: "none",
-              borderRadius: "6px",
-              fontSize: "13.5px",
-              fontWeight: "600",
-            }}
-          >
-            &larr; Back to Portfolio
-          </a>
-          <a
-            href="#resume"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              display: "inline-block",
-              padding: "10px 24px",
-              backgroundColor: "#0077ff",
-              color: "#fff",
-              textDecoration: "none",
-              borderRadius: "6px",
-              fontSize: "13.5px",
-              fontWeight: "600",
-            }}
-          >
-            View Resume
-          </a>
-        </div>
-
         {/* Footer info */}
         <div
           style={{
-            marginTop: "20px",
+            marginTop: "40px",
+            paddingTop: "20px",
+            borderTop: "1px solid #e2e8f0",
             textAlign: "center",
             fontSize: "13px",
             color: "#64748b",
