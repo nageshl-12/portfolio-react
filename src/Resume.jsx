@@ -1,10 +1,6 @@
 import React from "react";
 
 export default function Resume() {
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
     <div
       style={{
@@ -417,22 +413,23 @@ export default function Resume() {
             flexWrap: "wrap",
           }}
         >
-          <button
-            onClick={handlePrint}
+          <a
+            href="/Nagesh%20L%20Resume.pdf"
+            download="Nagesh L Resume.pdf"
             style={{
               display: "inline-block",
               padding: "10px 24px",
               backgroundColor: "#0f172a",
               color: "#fff",
-              border: "none",
+              textDecoration: "none",
               borderRadius: "6px",
               cursor: "pointer",
               fontSize: "13.5px",
               fontWeight: "600",
             }}
           >
-            Download / Print PDF
-          </button>
+            Download PDF
+          </a>
           <a
             href="#certificates"
             target="_blank"
