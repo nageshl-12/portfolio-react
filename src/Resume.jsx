@@ -102,6 +102,14 @@ export default function Resume() {
           >
             <span>Chamarajanagara</span>
             {" | "}
+
+            <a
+              href="tel:+916360744922"
+              style={{ color: "#111111", textDecoration: "underline" }}
+            >
+              6360744922
+            </a>
+            {" | "}
             <a
               href="mailto:nageshl15260@gmail.com"
               style={{ color: "#111111", textDecoration: "underline" }}
@@ -109,6 +117,7 @@ export default function Resume() {
               nageshl15260@gmail.com
             </a>
             {" | "}
+
             <a
               href="https://nageshl-portfolio.vercel.app/"
               target="_blank"
@@ -189,9 +198,16 @@ export default function Resume() {
           >
             TECHNICAL SKILLS
           </h3>
-          <p style={{ margin: "0", fontSize: "13px", color: "#111111", lineHeight: "1.55" }}>
-            HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React.js, React Router,
-            Context API, REST APIs, Git, GitHub, Vercel
+          <p
+            style={{
+              margin: "0",
+              fontSize: "13px",
+              color: "#111111",
+              lineHeight: "1.55",
+            }}
+          >
+            HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React.js, React
+            Router, Context API, REST APIs, Git, GitHub, Vercel
           </p>
         </div>
 
@@ -222,10 +238,22 @@ export default function Resume() {
                 marginBottom: "3px",
               }}
             >
-              <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+              <strong
+                style={{
+                  fontSize: "13.5px",
+                  color: "#000000",
+                  fontWeight: "700",
+                }}
+              >
                 Personal Portfolio Website
               </strong>
-              <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+              <strong
+                style={{
+                  fontSize: "13.5px",
+                  color: "#000000",
+                  fontWeight: "700",
+                }}
+              >
                 May 2026
               </strong>
             </div>
@@ -239,10 +267,12 @@ export default function Resume() {
               }}
             >
               <li>
-                Built a responsive personal portfolio website using React.js to showcase projects and technical skills.
+                Built a responsive personal portfolio website using React.js to
+                showcase projects and technical skills.
               </li>
               <li>
-                Developed an interactive UI with modern frontend techniques and 3D elements.
+                Developed an interactive UI with modern frontend techniques and
+                3D elements.
               </li>
               <li>Deployed the portfolio using Vercel.</li>
             </ul>
@@ -258,10 +288,22 @@ export default function Resume() {
                 marginBottom: "3px",
               }}
             >
-              <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+              <strong
+                style={{
+                  fontSize: "13.5px",
+                  color: "#000000",
+                  fontWeight: "700",
+                }}
+              >
                 Online Code Compiler
               </strong>
-              <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+              <strong
+                style={{
+                  fontSize: "13.5px",
+                  color: "#000000",
+                  fontWeight: "700",
+                }}
+              >
                 Mar 2026
               </strong>
             </div>
@@ -278,7 +320,8 @@ export default function Resume() {
                 Developed a web-based code compiler interface using JavaScript.
               </li>
               <li>
-                Implemented user input handling and code execution functionality.
+                Implemented user input handling and code execution
+                functionality.
               </li>
               <li>Deployed the application on AWS.</li>
             </ul>
@@ -294,10 +337,22 @@ export default function Resume() {
                 marginBottom: "3px",
               }}
             >
-              <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+              <strong
+                style={{
+                  fontSize: "13.5px",
+                  color: "#000000",
+                  fontWeight: "700",
+                }}
+              >
                 Currency Converter Web App
               </strong>
-              <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+              <strong
+                style={{
+                  fontSize: "13.5px",
+                  color: "#000000",
+                  fontWeight: "700",
+                }}
+              >
                 Jan 2026
               </strong>
             </div>
@@ -311,13 +366,16 @@ export default function Resume() {
               }}
             >
               <li>
-                Built a responsive currency converter using React.js and Tailwind CSS.
+                Built a responsive currency converter using React.js and
+                Tailwind CSS.
               </li>
               <li>
-                Integrated a REST API to fetch real-time currency exchange rates.
+                Integrated a REST API to fetch real-time currency exchange
+                rates.
               </li>
               <li>
-                Used async/await for asynchronous API requests and data handling.
+                Used async/await for asynchronous API requests and data
+                handling.
               </li>
             </ul>
           </div>
@@ -347,14 +405,28 @@ export default function Resume() {
               marginBottom: "3px",
             }}
           >
-            <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+            <strong
+              style={{
+                fontSize: "13.5px",
+                color: "#000000",
+                fontWeight: "700",
+              }}
+            >
               Bachelor of Computer Application
             </strong>
-            <strong style={{ fontSize: "13.5px", color: "#000000", fontWeight: "700" }}>
+            <strong
+              style={{
+                fontSize: "13.5px",
+                color: "#000000",
+                fontWeight: "700",
+              }}
+            >
               Sep 2023-Jun 2026
             </strong>
           </div>
-          <p style={{ margin: "0 0 2px 0", fontSize: "13px", color: "#111111" }}>
+          <p
+            style={{ margin: "0 0 2px 0", fontSize: "13px", color: "#111111" }}
+          >
             Vidya Vikas First Grade College, Mysore University
           </p>
           <p style={{ margin: "0", fontSize: "13px", color: "#111111" }}>
@@ -378,7 +450,9 @@ export default function Resume() {
           >
             ADDITIONAL INFORMATION
           </h3>
-          <div style={{ fontSize: "13px", color: "#111111", lineHeight: "1.6" }}>
+          <div
+            style={{ fontSize: "13px", color: "#111111", lineHeight: "1.6" }}
+          >
             <p style={{ margin: "0 0 4px 0" }}>
               <strong>Languages:</strong> English, Kannada, Hindi.
             </p>
@@ -386,15 +460,18 @@ export default function Resume() {
               <strong>Certifications:</strong>
               <ul style={{ margin: "3px 0 0 0", paddingLeft: "20px" }}>
                 <li>
-                  JavaScript Developer Certification &mdash; freeCodeCamp, June 2026
+                  JavaScript Developer Certification &mdash; freeCodeCamp, June
+                  2026
                 </li>
                 <li>
-                  Legacy JavaScript Algorithms and Data Structures &mdash; freeCodeCamp, June 2026
+                  Legacy JavaScript Algorithms and Data Structures &mdash;
+                  freeCodeCamp, June 2026
                 </li>
               </ul>
             </div>
             <p style={{ margin: "0" }}>
-              <strong>Interests:</strong> Frontend Development, Web Development, Problem Solving
+              <strong>Interests:</strong> Frontend Development, Web Development,
+              Problem Solving
             </p>
           </div>
         </div>
