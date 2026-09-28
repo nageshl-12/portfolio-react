@@ -337,7 +337,11 @@ function App() {
     history.pushState(null, null, targetId);
     setCurrentHash(targetId);
 
-    if (targetId === "#resume" || targetId === "#certificates" || targetId === "#certificate") {
+    if (
+      targetId === "#resume" ||
+      targetId === "#certificates" ||
+      targetId === "#certificate"
+    ) {
       window.scrollTo(0, 0);
       return;
     }
@@ -769,11 +773,8 @@ function App() {
                         className="skill-item floating"
                         style={{ animationDelay: "1.8s" }}
                       >
-                        <svg
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                        >
-                          <path d="M24 22.525H0L12 1.475L24 22.525Z"/>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M24 22.525H0L12 1.475L24 22.525Z" />
                         </svg>
                         <span>Vercel</span>
                       </div>
@@ -838,11 +839,13 @@ function App() {
                         "https://github.com/nageshl-12/-Currency-Converter-",
                     },
                     {
-                      title: "React Todo App",
-                      desc: "A feature-rich Todo App with task creation, editing, completion tracking, and Local Storage persistence.",
-                      icon: "fa-list-check",
-                      demoLink: "https://todo-app-react-v1.vercel.app/",
-                      codeLink: "https://github.com/nageshl-12/react-todo-app",
+                      title: "Fast React Pizza Co",
+                      desc: "A full-stack pizza ordering app with menu browsing, cart management, order placement, priority delivery, and order tracking",
+                      icon: "fa-pizza-slice",
+                      demoLink:
+                        "https://fast-react-pizza-co-app-six.vercel.app//",
+                      codeLink:
+                        "https://github.com/nageshl-12/fast-react-pizza-app",
                     },
                   ].map((proj, idx) => (
                     <div
