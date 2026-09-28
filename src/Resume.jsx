@@ -175,7 +175,7 @@ export default function Resume() {
           >
             Frontend Developer skilled in HTML, CSS, JavaScript, and React, with
             hands-on experience building responsive web applications.
-            Experienced with React Router, Context API, REST APIs, and modern
+            Experienced with React Router, Redux Toolkit, Context API, REST APIs, and modern
             frontend development practices. Focused on building clean,
             user-friendly interfaces and continuously improving frontend
             development skills.
@@ -207,7 +207,7 @@ export default function Resume() {
             }}
           >
             HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React.js, React
-            Router, Context API, REST APIs, Git, GitHub, Vercel
+            Router, Redux Toolkit, Context API, REST APIs, Git, GitHub, Vercel
           </p>
         </div>
 
