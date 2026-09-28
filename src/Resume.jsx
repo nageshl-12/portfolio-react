@@ -344,7 +344,7 @@ export default function Resume() {
                   fontWeight: "700",
                 }}
               >
-                Currency Converter Web App
+                Fast React Pizza Co.
               </strong>
               <strong
                 style={{
@@ -353,7 +353,7 @@ export default function Resume() {
                   fontWeight: "700",
                 }}
               >
-                Jan 2026
+                Sep 2026
               </strong>
             </div>
             <ul
@@ -366,16 +366,16 @@ export default function Resume() {
               }}
             >
               <li>
-                Built a responsive currency converter using React.js and
+                Built a responsive pizza ordering web app using React.js and
                 Tailwind CSS.
               </li>
               <li>
-                Integrated a REST API to fetch real-time currency exchange
-                rates.
+                Implemented React Router for navigation and Redux Toolkit for
+                cart state management.
               </li>
               <li>
-                Used async/await for asynchronous API requests and data
-                handling.
+                Integrated a REST API to fetch pizza menu data and manage
+                customer orders.
               </li>
             </ul>
           </div>
