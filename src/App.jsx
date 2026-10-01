@@ -846,12 +846,13 @@ function App() {
                         "https://github.com/nageshl-12/Compile-X-Online-Code-compiler",
                     },
                     {
-                      title: "Currency Converter",
-                      desc: "A modern, responsive currency converter application with real-time exchange rates.",
-                      icon: "fa-coins",
-                      demoLink: "https://exchange-rate-hub.vercel.app/",
+                      title: "Weather Forecast",
+                      desc: "A modern, responsive weather application with real-time weather data, location search, and a 5-day forecast.",
+                      icon: "fa-cloud-sun",
+                      demoLink:
+                        "https://weather-forecast-app-one-gold.vercel.app/",
                       codeLink:
-                        "https://github.com/nageshl-12/-Currency-Converter-",
+                        "https://github.com/nageshl-12/weather-forecast-app",
                     },
                     {
                       title: "Fast React Pizza Co",
