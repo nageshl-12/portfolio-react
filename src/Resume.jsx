@@ -1,80 +1,117 @@
 import React from 'react';
 
 export default function Resume() {
+  const contactLinkStyle = {
+    color: '#111111',
+    textDecoration: 'none',
+  };
+
   return (
     <div
+      className="resume-page-wrapper"
       style={{
         backgroundColor: '#f0f4f8',
         minHeight: '100vh',
-        padding: '40px 20px',
-        fontFamily: '"Inter", "Helvetica Neue", Arial, sans-serif',
+        padding: '35px 20px 50px 20px',
+        fontFamily:
+          '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}
     >
+      {/* Navigation Bar (Hidden when printing) */}
       <div
+        className="no-print"
         style={{
-          backgroundColor: '#ffffff',
           width: '100%',
-          maxWidth: '850px',
-          padding: '45px 50px',
-          boxSizing: 'border-box',
-          boxShadow: '0 4px 25px rgba(0,0,0,0.08)',
-          color: '#000000',
-          lineHeight: '1.45',
+          maxWidth: '820px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: '18px',
+          padding: '0 4px',
         }}
       >
-        {/* Navigation Actions (Hidden in print) */}
-        <div
-          className="no-print"
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            if (window.opener) {
+              window.close();
+            } else {
+              window.location.hash = '';
+              window.location.reload();
+            }
+          }}
           style={{
-            display: 'flex',
-            justifyContent: 'flex-start',
+            display: 'inline-flex',
             alignItems: 'center',
-            marginBottom: '20px',
-            paddingBottom: '15px',
-            borderBottom: '1px solid #e2e8f0',
+            gap: '8px',
+            padding: '8px 16px',
+            backgroundColor: '#ffffff',
+            color: '#1e293b',
+            textDecoration: 'none',
+            borderRadius: '6px',
+            fontSize: '13.5px',
+            fontWeight: '600',
+            boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+            border: '1px solid #cbd5e1',
+            transition: 'all 0.2s ease',
           }}
         >
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              if (window.opener) {
-                window.close();
-              } else {
-                window.location.hash = '';
-                window.location.reload();
-              }
-            }}
+          &larr; Back to Portfolio
+        </a>
+
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button
+            type="button"
+            onClick={() => window.print()}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
-              padding: '6px 14px',
-              backgroundColor: '#f1f5f9',
-              color: '#334155',
-              textDecoration: 'none',
-              borderRadius: '5px',
-              fontSize: '13px',
+              padding: '8px 16px',
+              backgroundColor: '#0f172a',
+              color: '#ffffff',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '13.5px',
               fontWeight: '600',
-              border: '1px solid #cbd5e1',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
             }}
           >
-            &larr; Back to Portfolio
-          </a>
+            Print / Save as PDF
+          </button>
         </div>
+      </div>
 
+      {/* Main Resume Sheet */}
+      <div
+        className="resume-paper"
+        style={{
+          backgroundColor: '#ffffff',
+          width: '100%',
+          maxWidth: '820px',
+          padding: '40px 48px',
+          boxSizing: 'border-box',
+          boxShadow: '0 4px 25px rgba(0, 0, 0, 0.08)',
+          color: '#000000',
+          lineHeight: '1.45',
+        }}
+      >
         {/* Header */}
         <div style={{ marginBottom: '10px' }}>
           <h1
             style={{
-              margin: '0 0 4px 0',
+              margin: '0 0 3px 0',
               fontSize: '26px',
               fontWeight: '800',
-              letterSpacing: '0.5px',
+              letterSpacing: '0.4px',
               color: '#000000',
               textTransform: 'uppercase',
+              lineHeight: '1.15',
             }}
           >
             NAGESH L
@@ -82,249 +119,278 @@ export default function Resume() {
           <h2
             style={{
               margin: '0 0 8px 0',
-              fontSize: '16px',
+              fontSize: '15px',
               fontWeight: '700',
-              color: '#111111',
+              color: '#000000',
               textTransform: 'uppercase',
-              letterSpacing: '0.5px',
+              letterSpacing: '0.4px',
+              lineHeight: '1.2',
             }}
           >
             FRONTEND DEVELOPER
           </h2>
           <p
             style={{
-              margin: '0 0 10px 0',
-              fontSize: '13px',
+              margin: '0',
+              fontSize: '12.5px',
               color: '#111111',
-              textDecoration: 'underline',
-              wordSpacing: '1px',
+              wordSpacing: '0.5px',
+              lineHeight: '1.4',
             }}
           >
-            <span>Chamarajanagara</span>
-            {' | '}
-
-            <a
-              href="tel:+916360744922"
-              style={{ color: '#111111', textDecoration: 'underline' }}
-            >
-              6360744922
-            </a>
+            <span>Chamarajanagara, Karnataka</span>
             {' | '}
             <a
               href="mailto:nageshl15260@gmail.com"
-              style={{ color: '#111111', textDecoration: 'underline' }}
+              style={contactLinkStyle}
             >
               nageshl15260@gmail.com
             </a>
             {' | '}
-
+            <a
+              href="tel:+916360744922"
+              style={contactLinkStyle}
+            >
+              +91 63607 44922
+            </a>
+            {' | '}
             <a
               href="https://nageshl-portfolio.vercel.app/"
               target="_blank"
               rel="noreferrer"
-              style={{ color: '#111111', textDecoration: 'underline' }}
+              style={contactLinkStyle}
             >
               Portfolio
-            </a>
-            {' | '}
-            <a
-              href="https://github.com/nageshl-12"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: '#111111', textDecoration: 'underline' }}
-            >
-              GitHub
             </a>
             {' | '}
             <a
               href="https://www.linkedin.com/in/nagesh-l-842372273/"
               target="_blank"
               rel="noreferrer"
-              style={{ color: '#111111', textDecoration: 'underline' }}
+              style={contactLinkStyle}
             >
               LinkedIn
+            </a>
+            {' | '}
+            <a
+              href="https://github.com/nageshl-12"
+              target="_blank"
+              rel="noreferrer"
+              style={contactLinkStyle}
+            >
+              GitHub
             </a>
           </p>
         </div>
 
-        {/* Section Divider Style */}
         {/* SUMMARY */}
-        <div style={{ marginBottom: '18px' }}>
-          <h3
+        <div style={{ marginBottom: '12px' }}>
+          <div
             style={{
-              margin: '0 0 8px 0',
-              fontSize: '13.5px',
-              fontWeight: '800',
-              textTransform: 'uppercase',
-              color: '#000000',
-              borderBottom: '1.5px solid #c59b27',
-              paddingBottom: '3px',
-              letterSpacing: '0.5px',
+              backgroundColor: '#e3e5e7',
+              padding: '2.5px 8px',
+              margin: '10px 0 7px 0',
+              width: '100%',
+              boxSizing: 'border-box',
             }}
           >
-            SUMMARY
-          </h3>
+            <h3
+              style={{
+                margin: 0,
+                fontSize: '13px',
+                fontWeight: '700',
+                fontStyle: 'italic',
+                letterSpacing: '0.6px',
+                color: '#000000',
+                textTransform: 'uppercase',
+              }}
+            >
+              SUMMARY
+            </h3>
+          </div>
           <p
             style={{
-              margin: '0',
-              fontSize: '13px',
-              lineHeight: '1.55',
+              margin: 0,
+              fontSize: '12px',
+              lineHeight: '1.45',
               color: '#111111',
               textAlign: 'justify',
             }}
           >
-            Frontend Developer skilled in HTML, CSS, JavaScript, and React, with
-            hands-on experience building responsive web applications.
-            Experienced with React Router, Redux Toolkit, TanStack React Query,
-            Context API, REST APIs, and modern frontend development practices.
-            Focused on building clean, user-friendly interfaces and continuously
-            improving frontend development skills.
+            Frontend Developer with a strong foundation in React.js, JavaScript (ES6+), and modern web technologies. Skilled in building responsive, user-friendly web applications using React, Redux Toolkit, React Query, and REST API integration. Experienced in developing real-world projects involving state management, reusable components, authentication, and backend integration. Passionate about building scalable, maintainable applications and continuously learning modern frontend technologies.
           </p>
         </div>
 
-        {/* TECHNICAL SKILLS */}
-        <div style={{ marginBottom: '18px' }}>
-          <h3
+        {/* SKILLS */}
+        <div style={{ marginBottom: '12px' }}>
+          <div
             style={{
-              margin: '0 0 8px 0',
-              fontSize: '13.5px',
-              fontWeight: '800',
-              textTransform: 'uppercase',
-              color: '#000000',
-              borderBottom: '1.5px solid #c59b27',
-              paddingBottom: '3px',
-              letterSpacing: '0.5px',
+              backgroundColor: '#e3e5e7',
+              padding: '2.5px 8px',
+              margin: '10px 0 7px 0',
+              width: '100%',
+              boxSizing: 'border-box',
             }}
           >
-            TECHNICAL SKILLS
-          </h3>
-          <p
-            style={{
-              margin: '0',
-              fontSize: '13px',
-              color: '#111111',
-              lineHeight: '1.55',
-            }}
-          >
-            HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), React.js, React
-            Router, Redux Toolkit, Context API, TanStack React Query, Supabase,
-            REST APIs, Git, GitHub, Vercel.
-          </p>
+            <h3
+              style={{
+                margin: 0,
+                fontSize: '13px',
+                fontWeight: '700',
+                fontStyle: 'italic',
+                letterSpacing: '0.6px',
+                color: '#000000',
+                textTransform: 'uppercase',
+              }}
+            >
+              SKILLS
+            </h3>
+          </div>
+          <div style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}>
+            <p style={{ margin: '0 0 3px 0' }}>
+              <strong style={{ fontWeight: '700', color: '#000000' }}>Frontend:</strong>{' '}
+              HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS
+            </p>
+            <p style={{ margin: '0 0 3px 0' }}>
+              <strong style={{ fontWeight: '700', color: '#000000' }}>React Ecosystem:</strong>{' '}
+              Redux Toolkit, React Router, TanStack React Query, React Hot Toast, Lucide React, React Hook Form
+            </p>
+            <p style={{ margin: '0 0 3px 0' }}>
+              <strong style={{ fontWeight: '700', color: '#000000' }}>Backend &amp; APIs:</strong>{' '}
+              Node.js, Express.js, REST API Integration, Supabase
+            </p>
+            <p style={{ margin: '0 0 3px 0' }}>
+              <strong style={{ fontWeight: '700', color: '#000000' }}>Tools:</strong>{' '}
+              Git, GitHub, VS Code, Vite, npm
+            </p>
+            <p style={{ margin: '0' }}>
+              <strong style={{ fontWeight: '700', color: '#000000' }}>Core Concepts:</strong>{' '}
+              Responsive Design, State Management, Component-Based Architecture, CRUD Operations
+            </p>
+          </div>
         </div>
 
         {/* PROJECTS */}
-        <div style={{ marginBottom: '18px' }}>
-          <h3
+        <div style={{ marginBottom: '12px' }}>
+          <div
             style={{
-              margin: '0 0 10px 0',
-              fontSize: '13.5px',
-              fontWeight: '800',
-              textTransform: 'uppercase',
-              color: '#000000',
-              borderBottom: '1.5px solid #c59b27',
-              paddingBottom: '3px',
-              letterSpacing: '0.5px',
+              backgroundColor: '#e3e5e7',
+              padding: '2.5px 8px',
+              margin: '10px 0 7px 0',
+              width: '100%',
+              boxSizing: 'border-box',
             }}
           >
-            PROJECTS
-          </h3>
+            <h3
+              style={{
+                margin: 0,
+                fontSize: '13px',
+                fontWeight: '700',
+                fontStyle: 'italic',
+                letterSpacing: '0.6px',
+                color: '#000000',
+                textTransform: 'uppercase',
+              }}
+            >
+              PROJECTS
+            </h3>
+          </div>
 
           {/* Project 1 */}
-          <div style={{ marginBottom: '14px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <div
               style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'baseline',
+                fontSize: '13px',
+                fontWeight: '700',
+                color: '#000000',
+                marginBottom: '1px',
+              }}
+            >
+              The Wild Oasis | Hotel Management Dashboard
+            </div>
+            <div
+              style={{
+                fontSize: '11.5px',
+                fontStyle: 'italic',
+                color: '#222222',
                 marginBottom: '3px',
               }}
             >
-              <strong
-                style={{
-                  fontSize: '13.5px',
-                  color: '#000000',
-                  fontWeight: '700',
-                }}
-              >
-                Personal Portfolio Website
-              </strong>
-              <strong
-                style={{
-                  fontSize: '13.5px',
-                  color: '#000000',
-                  fontWeight: '700',
-                }}
-              >
-                May 2026
-              </strong>
+              React.js, React Router, TanStack React Query, Supabase, Tailwind CSS
             </div>
             <ul
               style={{
-                margin: '0',
-                paddingLeft: '20px',
-                fontSize: '13px',
+                margin: 0,
+                paddingLeft: '18px',
+                fontSize: '12px',
+                lineHeight: '1.4',
                 color: '#111111',
-                lineHeight: '1.55',
               }}
             >
-              <li>
-                Built a responsive personal portfolio website using React.js to
-                showcase projects and technical skills.
+              <li style={{ marginBottom: '2px' }}>
+                Developed a hotel management dashboard to manage cabins, bookings, guests, and hotel settings.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Implemented complete CRUD operations with Supabase for data management and image storage.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Integrated TanStack React Query for server-state management, caching, and query invalidation.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Implemented dynamic filtering, sorting, and pagination for efficient data handling.
               </li>
               <li>
-                Developed an interactive UI with modern frontend techniques and
-                3D elements.
+                Built reusable UI components, responsive layouts, and booking management features.
               </li>
-              <li>Deployed the portfolio using Vercel.</li>
             </ul>
           </div>
 
           {/* Project 2 */}
-          <div style={{ marginBottom: '14px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <div
               style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'baseline',
+                fontSize: '13px',
+                fontWeight: '700',
+                color: '#000000',
+                marginBottom: '1px',
+              }}
+            >
+              SkyCast | Weather Forecast Application
+            </div>
+            <div
+              style={{
+                fontSize: '11.5px',
+                fontStyle: 'italic',
+                color: '#222222',
                 marginBottom: '3px',
               }}
             >
-              <strong
-                style={{
-                  fontSize: '13.5px',
-                  color: '#000000',
-                  fontWeight: '700',
-                }}
-              >
-                Online Code Compiler
-              </strong>
-              <strong
-                style={{
-                  fontSize: '13.5px',
-                  color: '#000000',
-                  fontWeight: '700',
-                }}
-              >
-                Mar 2026
-              </strong>
+              React.js, JavaScript, CSS, Open-Meteo API
             </div>
             <ul
               style={{
-                margin: '0',
-                paddingLeft: '20px',
-                fontSize: '13px',
+                margin: 0,
+                paddingLeft: '18px',
+                fontSize: '12px',
+                lineHeight: '1.4',
                 color: '#111111',
-                lineHeight: '1.55',
               }}
             >
-              <li>
-                Developed a web-based code compiler interface using JavaScript.
+              <li style={{ marginBottom: '2px' }}>
+                Developed a responsive weather application providing real-time weather conditions and forecasts using the Open-Meteo API.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Integrated geolocation to automatically detect users' locations and retrieve local weather information.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Implemented city search with reverse geocoding to fetch weather data for different locations.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Displayed current weather conditions, daily forecasts, visibility, and other weather metrics.
               </li>
               <li>
-                Implemented user input handling and code execution
-                functionality.
+                Used React Hooks, reusable components, and Local Storage to manage application state and persist user preferences.
               </li>
-              <li>Deployed the application on AWS.</li>
             </ul>
           </div>
 
@@ -332,178 +398,212 @@ export default function Resume() {
           <div style={{ marginBottom: '6px' }}>
             <div
               style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'baseline',
+                fontSize: '13px',
+                fontWeight: '700',
+                color: '#000000',
+                marginBottom: '1px',
+              }}
+            >
+              Fast React Pizza Co. | Pizza Ordering Application
+            </div>
+            <div
+              style={{
+                fontSize: '11.5px',
+                fontStyle: 'italic',
+                color: '#222222',
                 marginBottom: '3px',
               }}
             >
-              <strong
-                style={{
-                  fontSize: '13.5px',
-                  color: '#000000',
-                  fontWeight: '700',
-                }}
-              >
-                Fast React Pizza Co.
-              </strong>
-              <strong
-                style={{
-                  fontSize: '13.5px',
-                  color: '#000000',
-                  fontWeight: '700',
-                }}
-              >
-                Sep 2026
-              </strong>
+              React.js, Redux Toolkit, React Router, Tailwind CSS
             </div>
             <ul
               style={{
-                margin: '0',
-                paddingLeft: '20px',
-                fontSize: '13px',
+                margin: 0,
+                paddingLeft: '18px',
+                fontSize: '12px',
+                lineHeight: '1.4',
                 color: '#111111',
-                lineHeight: '1.55',
               }}
             >
-              <li>
-                Built a responsive pizza ordering web app using React.js and
-                Tailwind CSS.
+              <li style={{ marginBottom: '2px' }}>
+                Developed a pizza ordering application with an interactive menu and shopping cart.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Implemented Redux Toolkit for centralized cart state management and order updates.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Used React Router for navigation and data loading.
               </li>
               <li>
-                Implemented React Router for navigation and Redux Toolkit for
-                cart state management.
-              </li>
-              <li>
-                Integrated a REST API to fetch pizza menu data and manage
-                customer orders.
+                Integrated REST APIs to fetch menu items and submit customer orders.
               </li>
             </ul>
           </div>
         </div>
 
         {/* EDUCATION */}
-        <div style={{ marginBottom: '18px' }}>
-          <h3
+        <div style={{ marginBottom: '12px' }}>
+          <div
             style={{
-              margin: '0 0 8px 0',
-              fontSize: '13.5px',
-              fontWeight: '800',
-              textTransform: 'uppercase',
-              color: '#000000',
-              borderBottom: '1.5px solid #c59b27',
-              paddingBottom: '3px',
-              letterSpacing: '0.5px',
+              backgroundColor: '#e3e5e7',
+              padding: '2.5px 8px',
+              margin: '10px 0 7px 0',
+              width: '100%',
+              boxSizing: 'border-box',
             }}
           >
-            EDUCATION
-          </h3>
+            <h3
+              style={{
+                margin: 0,
+                fontSize: '13px',
+                fontWeight: '700',
+                fontStyle: 'italic',
+                letterSpacing: '0.6px',
+                color: '#000000',
+                textTransform: 'uppercase',
+              }}
+            >
+              EDUCATION
+            </h3>
+          </div>
           <div
             style={{
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'baseline',
-              marginBottom: '3px',
+              marginBottom: '1px',
             }}
           >
             <strong
               style={{
-                fontSize: '13.5px',
+                fontSize: '13px',
                 color: '#000000',
                 fontWeight: '700',
               }}
             >
-              Bachelor of Computer Application
+              Vidya Vikas First Grade College, Mysore
             </strong>
             <strong
               style={{
-                fontSize: '13.5px',
+                fontSize: '13px',
                 color: '#000000',
                 fontWeight: '700',
+                whiteSpace: 'nowrap',
               }}
             >
-              Sep 2023-Jun 2026
+              Sept 2023 - Jun 2026
             </strong>
           </div>
-          <p
-            style={{ margin: '0 0 2px 0', fontSize: '13px', color: '#111111' }}
-          >
-            Vidya Vikas First Grade College, Mysore University
-          </p>
-          <p style={{ margin: '0', fontSize: '13px', color: '#111111' }}>
-            CGPA:7.68
-          </p>
-        </div>
-
-        {/* ADDITIONAL INFORMATION */}
-        <div style={{ marginBottom: '10px' }}>
-          <h3
-            style={{
-              margin: '0 0 8px 0',
-              fontSize: '13.5px',
-              fontWeight: '800',
-              textTransform: 'uppercase',
-              color: '#000000',
-              borderBottom: '1.5px solid #c59b27',
-              paddingBottom: '3px',
-              letterSpacing: '0.5px',
-            }}
-          >
-            ADDITIONAL INFORMATION
-          </h3>
           <div
-            style={{ fontSize: '13px', color: '#111111', lineHeight: '1.6' }}
+            style={{
+              fontSize: '12px',
+              fontStyle: 'italic',
+              color: '#222222',
+              marginBottom: '2px',
+            }}
           >
-            <p style={{ margin: '0 0 4px 0' }}>
-              <strong>Languages:</strong> English, Kannada, Hindi.
+            University of Mysore
+          </div>
+          <div
+            style={{
+              fontSize: '12px',
+              color: '#111111',
+              marginBottom: '2px',
+            }}
+          >
+            Bachelor of Computer Applications (BCA)
+          </div>
+          <div
+            style={{
+              fontSize: '12px',
+              color: '#111111',
+            }}
+          >
+            CGPA: 7.68
+          </div>
+        </div>
+
+        {/* CERTIFICATIONS */}
+        <div style={{ marginBottom: '6px' }}>
+          <div
+            style={{
+              backgroundColor: '#e3e5e7',
+              padding: '2.5px 8px',
+              margin: '10px 0 7px 0',
+              width: '100%',
+              boxSizing: 'border-box',
+            }}
+          >
+            <h3
+              style={{
+                margin: 0,
+                fontSize: '13px',
+                fontWeight: '700',
+                fontStyle: 'italic',
+                letterSpacing: '0.6px',
+                color: '#000000',
+                textTransform: 'uppercase',
+              }}
+            >
+              CERTIFICATIONS
+            </h3>
+          </div>
+          <div style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}>
+            <p style={{ margin: '0 0 3px 0' }}>
+              JavaScript Algorithms and Data Structures – freeCodeCamp (June 2026)
             </p>
-            <div style={{ margin: '0 0 4px 0' }}>
-              <strong>Certifications:</strong>
-              <ul style={{ margin: '3px 0 0 0', paddingLeft: '20px' }}>
-                <li>
-                  JavaScript Developer Certification &mdash; freeCodeCamp, June
-                  2026
-                </li>
-                <li>
-                  Legacy JavaScript Algorithms and Data Structures &mdash;
-                  freeCodeCamp, June 2026
-                </li>
-              </ul>
-            </div>
-            <p style={{ margin: '0' }}>
-              <strong>Interests:</strong> Frontend Development, Web Development,
-              Problem Solving
+            <p style={{ margin: 0 }}>
+              Legacy JavaScript Algorithms and Data Structures – freeCodeCamp (June 2026)
             </p>
           </div>
         </div>
 
-        {/* Bottom Actions (Hidden in print) */}
+        {/* Bottom Actions (Hidden when printing) */}
         <div
           className="no-print"
           style={{
             textAlign: 'center',
-            marginTop: '30px',
-            paddingTop: '15px',
+            marginTop: '28px',
+            paddingTop: '18px',
             borderTop: '1px solid #e2e8f0',
             display: 'flex',
             justifyContent: 'center',
-            gap: '15px',
+            gap: '12px',
             flexWrap: 'wrap',
           }}
         >
+          <button
+            type="button"
+            onClick={() => window.print()}
+            style={{
+              display: 'inline-block',
+              padding: '9px 20px',
+              backgroundColor: '#0f172a',
+              color: '#ffffff',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '13px',
+              fontWeight: '600',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+            }}
+          >
+            Print / Save as PDF
+          </button>
           <a
             href="/Nagesh%20L%20Resume.pdf"
             download="Nagesh L Resume.pdf"
             style={{
               display: 'inline-block',
-              padding: '10px 24px',
-              backgroundColor: '#0f172a',
-              color: '#fff',
+              padding: '9px 20px',
+              backgroundColor: '#334155',
+              color: '#ffffff',
               textDecoration: 'none',
               borderRadius: '6px',
               cursor: 'pointer',
-              fontSize: '13.5px',
+              fontSize: '13px',
               fontWeight: '600',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
             }}
           >
             Download PDF
@@ -514,14 +614,15 @@ export default function Resume() {
             rel="noreferrer"
             style={{
               display: 'inline-block',
-              padding: '10px 24px',
+              padding: '9px 20px',
               backgroundColor: '#0077ff',
-              color: '#fff',
+              color: '#ffffff',
               textDecoration: 'none',
               borderRadius: '6px',
               cursor: 'pointer',
-              fontSize: '13.5px',
+              fontSize: '13px',
               fontWeight: '600',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
             }}
           >
             View Certificates
@@ -531,17 +632,28 @@ export default function Resume() {
 
       <style>{`
         @media print {
-          body { 
-            background: #ffffff !important; 
-            margin: 0 !important; 
-            padding: 0 !important; 
+          html, body {
+            background: #ffffff !important;
+            margin: 0 !important;
+            padding: 0 !important;
           }
-          .no-print { 
-            display: none !important; 
+          .resume-page-wrapper {
+            background: #ffffff !important;
+            padding: 0 !important;
+            min-height: auto !important;
           }
-          @page { 
-            margin: 1.2cm; 
+          .resume-paper {
+            box-shadow: none !important;
+            padding: 24px 32px !important;
+            max-width: 100% !important;
+            width: 100% !important;
+          }
+          .no-print {
+            display: none !important;
+          }
+          @page {
             size: A4 portrait;
+            margin: 0.8cm;
           }
         }
       `}</style>
