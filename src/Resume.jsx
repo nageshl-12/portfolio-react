@@ -140,22 +140,16 @@ export default function Resume() {
           >
             <span>Chamarajanagara, Karnataka</span>
             {' | '}
-            <a
-              href="mailto:nageshl15260@gmail.com"
-              style={contactLinkStyle}
-            >
+            <a href="mailto:nageshl15260@gmail.com" style={contactLinkStyle}>
               nageshl15260@gmail.com
             </a>
             {' | '}
-            <a
-              href="tel:+916360744922"
-              style={contactLinkStyle}
-            >
+            <a href="tel:+916360744922" style={contactLinkStyle}>
               +91 63607 44922
             </a>
             {' | '}
             <a
-              href="https://nageshl-portfolio.vercel.app/"
+              href="https://nageshl-portfolio.in"
               target="_blank"
               rel="noreferrer"
               style={contactLinkStyle}
@@ -217,7 +211,14 @@ export default function Resume() {
               textAlign: 'justify',
             }}
           >
-            Frontend Developer with a strong foundation in React.js, JavaScript (ES6+), and modern web technologies. Skilled in building responsive, user-friendly web applications using React, Redux Toolkit, React Query, and REST API integration. Experienced in developing real-world projects involving state management, reusable components, authentication, and backend integration. Passionate about building scalable, maintainable applications and continuously learning modern frontend technologies.
+            Frontend Developer with a strong foundation in React.js, JavaScript
+            (ES6+), and modern web technologies. Skilled in building responsive,
+            user-friendly web applications using React, Redux Toolkit, React
+            Query, and REST API integration. Experienced in developing
+            real-world projects involving state management, reusable components,
+            authentication, and backend integration. Passionate about building
+            scalable, maintainable applications and continuously learning modern
+            frontend technologies.
           </p>
         </div>
 
@@ -246,26 +247,40 @@ export default function Resume() {
               SKILLS
             </h3>
           </div>
-          <div style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}>
+          <div
+            style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}
+          >
             <p style={{ margin: '0 0 3px 0' }}>
-              <strong style={{ fontWeight: '700', color: '#000000' }}>Frontend:</strong>{' '}
+              <strong style={{ fontWeight: '700', color: '#000000' }}>
+                Frontend:
+              </strong>{' '}
               HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS
             </p>
             <p style={{ margin: '0 0 3px 0' }}>
-              <strong style={{ fontWeight: '700', color: '#000000' }}>React Ecosystem:</strong>{' '}
-              Redux Toolkit, React Router, TanStack React Query, React Hot Toast, Lucide React, React Hook Form
+              <strong style={{ fontWeight: '700', color: '#000000' }}>
+                React Ecosystem:
+              </strong>{' '}
+              Redux Toolkit, React Router, TanStack React Query, React Hot
+              Toast, Lucide React, React Hook Form
             </p>
             <p style={{ margin: '0 0 3px 0' }}>
-              <strong style={{ fontWeight: '700', color: '#000000' }}>Backend &amp; APIs:</strong>{' '}
+              <strong style={{ fontWeight: '700', color: '#000000' }}>
+                Backend &amp; APIs:
+              </strong>{' '}
               Node.js, Express.js, REST API Integration, Supabase
             </p>
             <p style={{ margin: '0 0 3px 0' }}>
-              <strong style={{ fontWeight: '700', color: '#000000' }}>Tools:</strong>{' '}
+              <strong style={{ fontWeight: '700', color: '#000000' }}>
+                Tools:
+              </strong>{' '}
               Git, GitHub, VS Code, Vite, npm
             </p>
             <p style={{ margin: '0' }}>
-              <strong style={{ fontWeight: '700', color: '#000000' }}>Core Concepts:</strong>{' '}
-              Responsive Design, State Management, Component-Based Architecture, CRUD Operations
+              <strong style={{ fontWeight: '700', color: '#000000' }}>
+                Core Concepts:
+              </strong>{' '}
+              Responsive Design, State Management, Component-Based Architecture,
+              CRUD Operations
             </p>
           </div>
         </div>
@@ -316,7 +331,8 @@ export default function Resume() {
                 marginBottom: '3px',
               }}
             >
-              React.js, React Router, TanStack React Query, Supabase, Tailwind CSS
+              React.js, React Router, TanStack React Query, Supabase, Tailwind
+              CSS
             </div>
             <ul
               style={{
@@ -328,19 +344,24 @@ export default function Resume() {
               }}
             >
               <li style={{ marginBottom: '2px' }}>
-                Developed a hotel management dashboard to manage cabins, bookings, guests, and hotel settings.
+                Developed a hotel management dashboard to manage cabins,
+                bookings, guests, and hotel settings.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Implemented complete CRUD operations with Supabase for data management and image storage.
+                Implemented complete CRUD operations with Supabase for data
+                management and image storage.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Integrated TanStack React Query for server-state management, caching, and query invalidation.
+                Integrated TanStack React Query for server-state management,
+                caching, and query invalidation.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Implemented dynamic filtering, sorting, and pagination for efficient data handling.
+                Implemented dynamic filtering, sorting, and pagination for
+                efficient data handling.
               </li>
               <li>
-                Built reusable UI components, responsive layouts, and booking management features.
+                Built reusable UI components, responsive layouts, and booking
+                management features.
               </li>
             </ul>
           </div>
@@ -377,19 +398,24 @@ export default function Resume() {
               }}
             >
               <li style={{ marginBottom: '2px' }}>
-                Developed a responsive weather application providing real-time weather conditions and forecasts using the Open-Meteo API.
+                Developed a responsive weather application providing real-time
+                weather conditions and forecasts using the Open-Meteo API.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Integrated geolocation to automatically detect users' locations and retrieve local weather information.
+                Integrated geolocation to automatically detect users' locations
+                and retrieve local weather information.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Implemented city search with reverse geocoding to fetch weather data for different locations.
+                Implemented city search with reverse geocoding to fetch weather
+                data for different locations.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Displayed current weather conditions, daily forecasts, visibility, and other weather metrics.
+                Displayed current weather conditions, daily forecasts,
+                visibility, and other weather metrics.
               </li>
               <li>
-                Used React Hooks, reusable components, and Local Storage to manage application state and persist user preferences.
+                Used React Hooks, reusable components, and Local Storage to
+                manage application state and persist user preferences.
               </li>
             </ul>
           </div>
@@ -426,16 +452,19 @@ export default function Resume() {
               }}
             >
               <li style={{ marginBottom: '2px' }}>
-                Developed a pizza ordering application with an interactive menu and shopping cart.
+                Developed a pizza ordering application with an interactive menu
+                and shopping cart.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Implemented Redux Toolkit for centralized cart state management and order updates.
+                Implemented Redux Toolkit for centralized cart state management
+                and order updates.
               </li>
               <li style={{ marginBottom: '2px' }}>
                 Used React Router for navigation and data loading.
               </li>
               <li>
-                Integrated REST APIs to fetch menu items and submit customer orders.
+                Integrated REST APIs to fetch menu items and submit customer
+                orders.
               </li>
             </ul>
           </div>
@@ -548,12 +577,16 @@ export default function Resume() {
               CERTIFICATIONS
             </h3>
           </div>
-          <div style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}>
+          <div
+            style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}
+          >
             <p style={{ margin: '0 0 3px 0' }}>
-              JavaScript Algorithms and Data Structures – freeCodeCamp (June 2026)
+              JavaScript Algorithms and Data Structures – freeCodeCamp (June
+              2026)
             </p>
             <p style={{ margin: 0 }}>
-              Legacy JavaScript Algorithms and Data Structures – freeCodeCamp (June 2026)
+              Legacy JavaScript Algorithms and Data Structures – freeCodeCamp
+              (June 2026)
             </p>
           </div>
         </div>
