@@ -127,7 +127,7 @@ export default function Resume() {
               lineHeight: '1.2',
             }}
           >
-            FRONTEND DEVELOPER
+            ASPIRING FULL-STACK DEVELOPER
           </h2>
           <p
             style={{
@@ -211,14 +211,14 @@ export default function Resume() {
               textAlign: 'justify',
             }}
           >
-            Frontend Developer with a strong foundation in React.js, JavaScript
-            (ES6+), and modern web technologies. Skilled in building responsive,
-            user-friendly web applications using React, Redux Toolkit, React
-            Query, and REST API integration. Experienced in developing
-            real-world projects involving state management, reusable components,
-            authentication, and backend integration. Passionate about building
-            scalable, maintainable applications and continuously learning modern
-            frontend technologies.
+            Aspiring Full-Stack Developer with a strong foundation in React.js,
+            JavaScript (ES6+), and Next.js. Experienced in building responsive,
+            user-friendly web applications using Redux Toolkit, TanStack React
+            Query, and Tailwind CSS. Hands-on experience with Supabase
+            integration, Google OAuth authentication, server-side rendering, and
+            reservation management. Passionate about developing scalable,
+            maintainable applications and continuously learning modern web
+            technologies.
           </p>
         </div>
 
@@ -254,7 +254,7 @@ export default function Resume() {
               <strong style={{ fontWeight: '700', color: '#000000' }}>
                 Frontend:
               </strong>{' '}
-              HTML5, CSS3, JavaScript (ES6+), React.js, Tailwind CSS
+              HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Tailwind CSS
             </p>
             <p style={{ margin: '0 0 3px 0' }}>
               <strong style={{ fontWeight: '700', color: '#000000' }}>
@@ -267,7 +267,7 @@ export default function Resume() {
               <strong style={{ fontWeight: '700', color: '#000000' }}>
                 Backend &amp; APIs:
               </strong>{' '}
-              Node.js, Express.js, REST API Integration, Supabase
+              Node.js, Auth.js, REST API Integration, Supabase, Server Actions
             </p>
             <p style={{ margin: '0 0 3px 0' }}>
               <strong style={{ fontWeight: '700', color: '#000000' }}>
@@ -279,8 +279,9 @@ export default function Resume() {
               <strong style={{ fontWeight: '700', color: '#000000' }}>
                 Core Concepts:
               </strong>{' '}
-              Responsive Design, State Management, Component-Based Architecture,
-              CRUD Operations
+              Authentication &amp; Authorization, Server-Side Rendering (SSR),
+              Caching &amp; Revalidation, Responsive Design, State Management,
+              Component-Based Architecture, CRUD Operations
             </p>
           </div>
         </div>
@@ -312,7 +313,7 @@ export default function Resume() {
           </div>
 
           {/* Project 1 */}
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '8px' }}>
             <div
               style={{
                 fontSize: '13px',
@@ -355,19 +356,66 @@ export default function Resume() {
                 Integrated TanStack React Query for server-state management,
                 caching, and query invalidation.
               </li>
-              <li style={{ marginBottom: '2px' }}>
-                Implemented dynamic filtering, sorting, and pagination for
-                efficient data handling.
-              </li>
               <li>
-                Built reusable UI components, responsive layouts, and booking
-                management features.
+                Built dynamic filtering, sorting, pagination, and reusable UI
+                components for efficient data handling.
               </li>
             </ul>
           </div>
 
           {/* Project 2 */}
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '8px' }}>
+            <div
+              style={{
+                fontSize: '13px',
+                fontWeight: '700',
+                color: '#000000',
+                marginBottom: '1px',
+              }}
+            >
+              The Wild Oasis | Customer Cabin Booking Platform
+            </div>
+            <div
+              style={{
+                fontSize: '11.5px',
+                fontStyle: 'italic',
+                color: '#222222',
+                marginBottom: '3px',
+              }}
+            >
+              Next.js, React, Tailwind CSS, Supabase, Auth.js
+            </div>
+            <ul
+              style={{
+                margin: 0,
+                paddingLeft: '18px',
+                fontSize: '12px',
+                lineHeight: '1.4',
+                color: '#111111',
+              }}
+            >
+              <li style={{ marginBottom: '2px' }}>
+                Developed a customer-facing cabin booking platform to browse
+                cabins, view details, and explore availability.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Implemented Google OAuth authentication using Auth.js for
+                secure user sign-in.
+              </li>
+              <li style={{ marginBottom: '2px' }}>
+                Built interactive date selection and reservation functionality
+                with booking availability validation.
+              </li>
+              <li>
+                Integrated Supabase for database operations and implemented
+                reservation management, including viewing, updating, and
+                cancelling bookings.
+              </li>
+            </ul>
+          </div>
+
+          {/* Project 3 */}
+          <div style={{ marginBottom: '8px' }}>
             <div
               style={{
                 fontSize: '13px',
@@ -409,18 +457,15 @@ export default function Resume() {
                 Implemented city search with reverse geocoding to fetch weather
                 data for different locations.
               </li>
-              <li style={{ marginBottom: '2px' }}>
-                Displayed current weather conditions, daily forecasts,
-                visibility, and other weather metrics.
-              </li>
               <li>
-                Used React Hooks, reusable components, and Local Storage to
-                manage application state and persist user preferences.
+                Displayed current weather conditions, daily forecasts,
+                visibility, and other weather metrics using reusable React
+                components.
               </li>
             </ul>
           </div>
 
-          {/* Project 3 */}
+          {/* Project 4 */}
           <div style={{ marginBottom: '6px' }}>
             <div
               style={{
@@ -677,7 +722,7 @@ export default function Resume() {
           }
           .resume-paper {
             box-shadow: none !important;
-            padding: 24px 32px !important;
+            padding: 16px 26px !important;
             max-width: 100% !important;
             width: 100% !important;
           }
@@ -686,7 +731,7 @@ export default function Resume() {
           }
           @page {
             size: A4 portrait;
-            margin: 0.8cm;
+            margin: 0.5cm;
           }
         }
       `}</style>

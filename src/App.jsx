@@ -719,6 +719,19 @@ function App() {
                         style={{ animationDelay: "1.0s" }}
                       >
                         <svg
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <path d="M18.665 21.978C16.808 23.255 14.512 24 12 24 5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12c0 3.584-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.599h1.6V9.521l9.865 12.457ZM15.2 7.2h1.6v6.4h-1.6V7.2Z" />
+                        </svg>
+                        <span>Next.js</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "1.2s" }}
+                      >
+                        <svg
                           viewBox="0 0 128 128"
                           style={{ height: "2.5rem", width: "auto" }}
                         >
@@ -735,7 +748,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.2s" }}
+                        style={{ animationDelay: "1.4s" }}
                       >
                         <svg
                           viewBox="0 0 128 128"
@@ -750,7 +763,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.4s" }}
+                        style={{ animationDelay: "1.6s" }}
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -765,7 +778,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.6s" }}
+                        style={{ animationDelay: "1.8s" }}
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -784,7 +797,7 @@ function App() {
                     <div className="skills-container">
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.6s" }}
+                        style={{ animationDelay: "1.8s" }}
                       >
                         <i
                           className="fab fa-git-alt"
@@ -794,7 +807,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.8s" }}
+                        style={{ animationDelay: "2.0s" }}
                       >
                         <i
                           className="fab fa-aws"
@@ -804,7 +817,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "2.0s" }}
+                        style={{ animationDelay: "2.2s" }}
                       >
                         <i
                           className="fas fa-network-wired"
@@ -814,7 +827,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "2.2s" }}
+                        style={{ animationDelay: "2.4s" }}
                       >
                         <svg
                           viewBox="0 0 128 128"
@@ -866,7 +879,96 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "2.4s" }}
+                        style={{ animationDelay: "2.6s" }}
+                      >
+                        <svg
+                          viewBox="0 0 210 232"
+                          style={{ height: "2.5rem", width: "auto" }}
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="authjs_a"
+                              x1="19.57"
+                              x2="97.527"
+                              y1="96.564"
+                              y2="15.078"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stopColor="#45FFC8" />
+                              <stop offset="1" stopColor="#1DBBF1" />
+                            </linearGradient>
+                            <linearGradient
+                              id="authjs_b"
+                              x1="73.786"
+                              x2="170.671"
+                              y1="143.724"
+                              y2="190.884"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stopColor="#D14AE8" />
+                              <stop offset="0.552" stopColor="#B628E3" />
+                              <stop offset="1" stopColor="#8315FD" />
+                            </linearGradient>
+                            <linearGradient
+                              id="authjs_c"
+                              x1="155.914"
+                              x2="155.914"
+                              y1="21.815"
+                              y2="182.542"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stopColor="#20ABF5" />
+                              <stop offset="0.398" stopColor="#2A8CC3" />
+                              <stop offset="1" stopColor="#A104DC" />
+                            </linearGradient>
+                            <linearGradient
+                              id="authjs_d"
+                              x1="90.148"
+                              x2="129.287"
+                              y1="99.452"
+                              y2="138.912"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stopColor="#FE5B01" />
+                              <stop offset="1" stopColor="#FFB200" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            fill="url(#authjs_a)"
+                            fillRule="evenodd"
+                            d="M208.687 31.859 30.095 167.73C8.164 127.966.568 79.998 0 51.228v-17.61c0-2.561 2.779-4.055 4.169-4.482C33.562 20.278 93.247 2.306 96.838 1.28 100.429.256 103.464 0 104.534 0h.097c1.069 0 4.104.256 7.696 1.28 3.591 1.025 63.276 18.998 92.669 27.856 1.034.317 2.836 1.225 3.691 2.723Z"
+                            clipRule="evenodd"
+                          />
+                          <path
+                            fill="url(#authjs_b)"
+                            fillRule="evenodd"
+                            d="m30.094 167.952 178.592-135.87c.295.516.478 1.102.478 1.759V51.45c-.962 48.773-22.126 152.722-99.083 178.336-1.068.427-3.591 1.281-5.13 1.281h-.739c-1.539 0-4.062-.854-5.13-1.281-31.563-10.505-53.74-34.186-68.988-61.834Z"
+                            clipRule="evenodd"
+                          />
+                          <path
+                            fill="url(#authjs_c)"
+                            fillOpacity=".21"
+                            d="M111.74 1.283C108.147.257 105.11 0 104.04 0l-.321 231.305h.642c1.54 0 4.064-.855 5.133-1.283 76.995-25.665 98.169-129.822 99.131-178.692V33.685c0-2.566-2.78-4.063-4.171-4.491-29.407-8.876-89.121-26.884-92.714-27.91Z"
+                          />
+                          <ellipse
+                            cx="104.905"
+                            cy="114.209"
+                            fill="#E3E2FA"
+                            rx="47.801"
+                            ry="47.48"
+                          />
+                          <path
+                            fill="url(#authjs_d)"
+                            d="M104.905 84.729c-16.275 0-29.47 13.195-29.47 29.47 0 12.206 7.423 22.68 18.012 27.12v13.568c0 2.457 2.012 4.469 4.469 4.469h13.978c2.457 0 4.469-2.012 4.469-4.469V141.32c10.589-4.44 18.012-14.914 18.012-27.121 0-16.275-13.195-29.47-29.47-29.47Zm0 13.978c8.556 0 15.492 6.936 15.492 15.492 0 6.678-4.225 12.368-10.158 14.536v18.093h-10.668v-18.093c-5.933-2.168-10.158-7.858-10.158-14.536 0-8.556 6.936-15.492 15.492-15.492Z"
+                          />
+                        </svg>
+                        <span>Auth.js</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "2.8s" }}
                       >
                         <svg viewBox="0 0 24 24" fill="currentColor">
                           <path d="M24 22.525H0L12 1.475L24 22.525Z" />
