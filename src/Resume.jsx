@@ -399,8 +399,8 @@ export default function Resume() {
                 cabins, view details, and explore availability.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Implemented Google OAuth authentication using Auth.js for
-                secure user sign-in.
+                Implemented Google OAuth authentication using Auth.js for secure
+                user sign-in.
               </li>
               <li style={{ marginBottom: '2px' }}>
                 Built interactive date selection and reservation functionality
@@ -626,12 +626,14 @@ export default function Resume() {
             style={{ fontSize: '12px', lineHeight: '1.45', color: '#111111' }}
           >
             <p style={{ margin: '0 0 3px 0' }}>
-              JavaScript Algorithms and Data Structures – freeCodeCamp (June
-              2026)
+              The Ultimate React Course 2025: React, Next.js, Redux & More{' '}
+              <br />
+              Udemy | Jonas Schmedtmann | November 2026
             </p>
+            <br />
             <p style={{ margin: 0 }}>
-              Legacy JavaScript Algorithms and Data Structures – freeCodeCamp
-              (June 2026)
+              JavaScript Algorithms and Data Structures <br />
+              freeCodeCamp | June 2026
             </p>
           </div>
         </div>
