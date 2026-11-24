@@ -271,6 +271,12 @@ export default function Resume() {
             </p>
             <p style={{ margin: '0 0 3px 0' }}>
               <strong style={{ fontWeight: '700', color: '#000000' }}>
+                Cloud &amp; Deployments:
+              </strong>{' '}
+              AWS Amplify, Amazon Route 53, Amazon CloudFront, Vercel
+            </p>
+            <p style={{ margin: '0 0 3px 0' }}>
+              <strong style={{ fontWeight: '700', color: '#000000' }}>
                 Tools:
               </strong>{' '}
               Git, GitHub, VS Code, Vite, npm
@@ -383,7 +389,8 @@ export default function Resume() {
                 marginBottom: '3px',
               }}
             >
-              Next.js, React, Tailwind CSS, Supabase, Auth.js
+              Next.js, React, Tailwind CSS, Supabase, Auth.js, AWS Amplify,
+              Amazon Route 53
             </div>
             <ul
               style={{
@@ -395,21 +402,21 @@ export default function Resume() {
               }}
             >
               <li style={{ marginBottom: '2px' }}>
-                Developed a customer-facing cabin booking platform to browse
-                cabins, view details, and explore availability.
+                Developed a responsive cabin booking platform with cabin
+                browsing, detailed views, and reservation features.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Implemented Google OAuth authentication using Auth.js for secure
-                user sign-in.
+                Implemented secure Google OAuth authentication using Auth.js and
+                personalized customer account access.
               </li>
               <li style={{ marginBottom: '2px' }}>
-                Built interactive date selection and reservation functionality
-                with booking availability validation.
+                Integrated Supabase for cabin data, reservation creation, and
+                booking management
               </li>
               <li>
-                Integrated Supabase for database operations and implemented
-                reservation management, including viewing, updating, and
-                cancelling bookings.
+                Built interactive date selection with availability validation
+                and deployed on AWS Amplify using a custom domain configured
+                through Route 53.
               </li>
             </ul>
           </div>
