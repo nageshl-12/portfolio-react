@@ -664,6 +664,7 @@ function App() {
               <div className="container">
                 <h2 className="section-title">My Skills</h2>
                 <div className="skills-wrapper">
+                  {/* 1. Frontend */}
                   <div className="skills-group">
                     <h3 className="skills-group-title">Frontend</h3>
                     <div className="skills-container">
@@ -672,7 +673,7 @@ function App() {
                           className="fab fa-html5"
                           style={{ color: "#E34F26" }}
                         ></i>
-                        <span>HTML</span>
+                        <span>HTML5</span>
                       </div>
                       <div
                         className="skill-item floating"
@@ -682,41 +683,31 @@ function App() {
                           className="fab fa-css3-alt"
                           style={{ color: "#1572B6" }}
                         ></i>
-                        <span>CSS</span>
+                        <span>CSS3</span>
                       </div>
                       <div
                         className="skill-item floating"
                         style={{ animationDelay: "0.4s" }}
                       >
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                          alt="Tailwind CSS"
-                        />
-                        <span>Tailwind CSS</span>
+                        <i
+                          className="fab fa-js"
+                          style={{ color: "#F7DF1E" }}
+                        ></i>
+                        <span>JavaScript (ES6+)</span>
                       </div>
                       <div
                         className="skill-item floating"
                         style={{ animationDelay: "0.6s" }}
                       >
                         <i
-                          className="fab fa-js"
-                          style={{ color: "#F7DF1E" }}
+                          className="fab fa-react"
+                          style={{ color: "#61DAFB" }}
                         ></i>
-                        <span>JavaScript</span>
+                        <span>React.js</span>
                       </div>
                       <div
                         className="skill-item floating"
                         style={{ animationDelay: "0.8s" }}
-                      >
-                        <i
-                          className="fab fa-react"
-                          style={{ color: "#61DAFB" }}
-                        ></i>
-                        <span>React</span>
-                      </div>
-                      <div
-                        className="skill-item floating"
-                        style={{ animationDelay: "1.0s" }}
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -729,7 +720,39 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.2s" }}
+                        style={{ animationDelay: "1.0s" }}
+                      >
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                          alt="Tailwind CSS"
+                        />
+                        <span>Tailwind CSS</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 2. React Ecosystem */}
+                  <div className="skills-group">
+                    <h3 className="skills-group-title">React Ecosystem</h3>
+                    <div className="skills-container">
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.1s" }}
+                      >
+                        <svg
+                          viewBox="0 0 128 128"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <path
+                            fill="#764ABC"
+                            d="M88.69 88.11c-9 18.4-24.76 30.78-45.61 34.85a39.73 39.73 0 0 1-9.77 1.14c-12 0-23-5-28.34-13.19C-2.2 100-4.64 76.87 19 59.76c.48 2.61 1.46 6.19 2.11 8.31A38.24 38.24 0 0 0 10 81.1c-4.4 8.64-3.91 17.27 1.3 25.25 3.6 5.38 9.3 8.65 16.63 9.65a44 44 0 0 0 26.55-5c12.71-6.68 21.18-14.66 26.72-25.57a9.32 9.32 0 0 1-2.61-6A9.12 9.12 0 0 1 87.37 70h.34a9.15 9.15 0 0 1 1 18.25zm28.67-20.2c12.21 13.84 12.54 30.13 7.82 39.58-4.4 8.63-16 17.27-31.6 17.27a50.48 50.48 0 0 1-21-5.05c2.29-1.63 5.54-4.24 7.33-5.87a41.54 41.54 0 0 0 16 3.42c10.1 0 17.75-4.72 22.31-13.35 2.93-5.7 3.1-12.38.33-19.22a43.61 43.61 0 0 0-17.27-20.85 62 62 0 0 0-34.74-10.59h-2.93a9.21 9.21 0 0 1-8 5.54h-.31a9.13 9.13 0 0 1-.3-18.25h.33a9 9 0 0 1 8 4.89h2.61c20.8 0 39.06 7.98 51.42 22.48zm-82.75 23a7.31 7.31 0 0 1 1.14-4.73c-9.12-15.8-14-35.83-6.51-56.68C34.61 13.83 48.13 3.24 62.79 3.24c15.64 0 31.93 13.69 33.88 40.07-2.44-.81-6-2-8.14-2.44-.53-8.63-7.82-30.13-25.09-29.81-6.19.17-15.31 3.1-20 9.12a43.69 43.69 0 0 0-9.64 25.25 59.61 59.61 0 0 0 8.47 36.16 2.75 2.75 0 0 1 1.14-.16h.32a9.121 9.121 0 0 1 .33 18.24h-.33a9.16 9.16 0 0 1-9.12-8.79z"
+                          />
+                        </svg>
+                        <span>Redux Toolkit</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.3s" }}
                       >
                         <svg
                           viewBox="0 0 128 128"
@@ -748,22 +771,7 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.4s" }}
-                      >
-                        <svg
-                          viewBox="0 0 128 128"
-                          style={{ height: "2.5rem", width: "auto" }}
-                        >
-                          <path
-                            fill="#764ABC"
-                            d="M88.69 88.11c-9 18.4-24.76 30.78-45.61 34.85a39.73 39.73 0 0 1-9.77 1.14c-12 0-23-5-28.34-13.19C-2.2 100-4.64 76.87 19 59.76c.48 2.61 1.46 6.19 2.11 8.31A38.24 38.24 0 0 0 10 81.1c-4.4 8.64-3.91 17.27 1.3 25.25 3.6 5.38 9.3 8.65 16.63 9.65a44 44 0 0 0 26.55-5c12.71-6.68 21.18-14.66 26.72-25.57a9.32 9.32 0 0 1-2.61-6A9.12 9.12 0 0 1 87.37 70h.34a9.15 9.15 0 0 1 1 18.25zm28.67-20.2c12.21 13.84 12.54 30.13 7.82 39.58-4.4 8.63-16 17.27-31.6 17.27a50.48 50.48 0 0 1-21-5.05c2.29-1.63 5.54-4.24 7.33-5.87a41.54 41.54 0 0 0 16 3.42c10.1 0 17.75-4.72 22.31-13.35 2.93-5.7 3.1-12.38.33-19.22a43.61 43.61 0 0 0-17.27-20.85 62 62 0 0 0-34.74-10.59h-2.93a9.21 9.21 0 0 1-8 5.54h-.31a9.13 9.13 0 0 1-.3-18.25h.33a9 9 0 0 1 8 4.89h2.61c20.8 0 39.06 7.98 51.42 22.48zm-82.75 23a7.31 7.31 0 0 1 1.14-4.73c-9.12-15.8-14-35.83-6.51-56.68C34.61 13.83 48.13 3.24 62.79 3.24c15.64 0 31.93 13.69 33.88 40.07-2.44-.81-6-2-8.14-2.44-.53-8.63-7.82-30.13-25.09-29.81-6.19.17-15.31 3.1-20 9.12a43.69 43.69 0 0 0-9.64 25.25 59.61 59.61 0 0 0 8.47 36.16 2.75 2.75 0 0 1 1.14-.16h.32a9.121 9.121 0 0 1 .33 18.24h-.33a9.16 9.16 0 0 1-9.12-8.79z"
-                          />
-                        </svg>
-                        <span>Redux Toolkit</span>
-                      </div>
-                      <div
-                        className="skill-item floating"
-                        style={{ animationDelay: "1.6s" }}
+                        style={{ animationDelay: "0.5s" }}
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -778,7 +786,55 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.8s" }}
+                        style={{ animationDelay: "0.7s" }}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <path
+                            d="M19 10C19 6.686 16.314 4 13 4H11C7.686 4 5 6.686 5 10v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9z"
+                            fill="#F59E0B"
+                          />
+                          <path
+                            d="M17 10.5c0-1.933-1.567-3.5-3.5-3.5h-3C8.567 7 7 8.567 7 10.5V18a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-7.5z"
+                            fill="#FDE68A"
+                          />
+                          <path
+                            d="M12 1.5c.8 1.3 1.8 2.2 1.8 3.5a1.8 1.8 0 1 1-3.6 0c0-1.3 1-2.2 1.8-3.5z"
+                            fill="#EF4444"
+                          />
+                          <circle cx="10" cy="11.5" r="0.9" fill="#D97706" />
+                          <circle cx="14" cy="13.5" r="0.9" fill="#D97706" />
+                          <circle cx="11" cy="15.5" r="0.9" fill="#D97706" />
+                        </svg>
+                        <span>React Hot Toast</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.9s" }}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#F43F5E"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                          <path d="M5 3v4" />
+                          <path d="M19 17v4" />
+                          <path d="M3 5h4" />
+                          <path d="M17 19h4" />
+                        </svg>
+                        <span>Lucide React</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "1.1s" }}
                       >
                         <svg
                           viewBox="0 0 24 24"
@@ -792,94 +848,23 @@ function App() {
                     </div>
                   </div>
 
+                  {/* 3. Backend & APIs */}
                   <div className="skills-group">
-                    <h3 className="skills-group-title">Technologies</h3>
+                    <h3 className="skills-group-title">Backend & APIs</h3>
                     <div className="skills-container">
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "1.8s" }}
+                        style={{ animationDelay: "0.2s" }}
                       >
                         <i
-                          className="fab fa-git-alt"
-                          style={{ color: "#F05032" }}
+                          className="fab fa-node-js"
+                          style={{ color: "#339933" }}
                         ></i>
-                        <span>Git</span>
+                        <span>Node.js</span>
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "2.0s" }}
-                      >
-                        <i
-                          className="fab fa-aws"
-                          style={{ color: "#FF9900" }}
-                        ></i>
-                        <span>AWS (Basic)</span>
-                      </div>
-                      <div
-                        className="skill-item floating"
-                        style={{ animationDelay: "2.2s" }}
-                      >
-                        <i
-                          className="fas fa-network-wired"
-                          style={{ color: "#00D1B2" }}
-                        ></i>
-                        <span>REST API</span>
-                      </div>
-                      <div
-                        className="skill-item floating"
-                        style={{ animationDelay: "2.4s" }}
-                      >
-                        <svg
-                          viewBox="0 0 128 128"
-                          style={{ height: "2.5rem", width: "auto" }}
-                        >
-                          <defs>
-                            <linearGradient
-                              id="supabaseGradA"
-                              x1="53.974"
-                              x2="94.163"
-                              y1="54.974"
-                              y2="71.829"
-                              gradientTransform="translate(29.387 60.096) scale(1.1436)"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop offset="0" stopColor="#249361" />
-                              <stop offset="1" stopColor="#3ecf8e" />
-                            </linearGradient>
-                            <linearGradient
-                              id="supabaseGradB"
-                              x1="36.156"
-                              x2="54.484"
-                              y1="30.578"
-                              y2="65.081"
-                              gradientTransform="translate(29.387 60.096) scale(1.1436)"
-                              gradientUnits="userSpaceOnUse"
-                            >
-                              <stop offset="0" />
-                              <stop offset="1" stopOpacity="0" />
-                            </linearGradient>
-                          </defs>
-                          <path
-                            fill="url(#supabaseGradA)"
-                            d="M102.24 186.21c-3.267 4.117-9.904 1.862-9.977-3.397l-1.156-76.906h51.715c9.365 0 14.587 10.817 8.763 18.149z"
-                            transform="translate(-27.722 -60.338)"
-                          />
-                          <path
-                            fill="url(#supabaseGradB)"
-                            fillOpacity=".2"
-                            d="M102.24 186.21c-3.267 4.117-9.904 1.862-9.977-3.397l-1.156-76.906h51.715c9.365 0 14.587 10.817 8.763 18.149z"
-                            transform="translate(-27.722 -60.338)"
-                          />
-                          <path
-                            fill="#3ecf8e"
-                            d="M53.484 2.128c3.267-4.117 9.905-1.862 9.977 3.396l.508 76.907H12.902c-9.365 0-14.587-10.817-8.764-18.149z"
-                          />
-                        </svg>
-                        <span>Supabase</span>
-                      </div>
-                      <div
-                        className="skill-item floating"
-                        style={{ animationDelay: "2.6s" }}
+                        style={{ animationDelay: "0.4s" }}
                       >
                         <svg
                           viewBox="0 0 210 232"
@@ -968,12 +953,249 @@ function App() {
                       </div>
                       <div
                         className="skill-item floating"
-                        style={{ animationDelay: "2.8s" }}
+                        style={{ animationDelay: "0.6s" }}
                       >
-                        <svg viewBox="0 0 24 24" fill="currentColor">
+                        <i
+                          className="fas fa-network-wired"
+                          style={{ color: "#00D1B2" }}
+                        ></i>
+                        <span>REST API Integration</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.8s" }}
+                      >
+                        <svg
+                          viewBox="0 0 128 128"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <defs>
+                            <linearGradient
+                              id="supabaseGradA"
+                              x1="53.974"
+                              x2="94.163"
+                              y1="54.974"
+                              y2="71.829"
+                              gradientTransform="translate(29.387 60.096) scale(1.1436)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop offset="0" stopColor="#249361" />
+                              <stop offset="1" stopColor="#3ecf8e" />
+                            </linearGradient>
+                            <linearGradient
+                              id="supabaseGradB"
+                              x1="36.156"
+                              x2="54.484"
+                              y1="30.578"
+                              y2="65.081"
+                              gradientTransform="translate(29.387 60.096) scale(1.1436)"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop offset="0" />
+                              <stop offset="1" stopOpacity="0" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            fill="url(#supabaseGradA)"
+                            d="M102.24 186.21c-3.267 4.117-9.904 1.862-9.977-3.397l-1.156-76.906h51.715c9.365 0 14.587 10.817 8.763 18.149z"
+                            transform="translate(-27.722 -60.338)"
+                          />
+                          <path
+                            fill="url(#supabaseGradB)"
+                            fillOpacity=".2"
+                            d="M102.24 186.21c-3.267 4.117-9.904 1.862-9.977-3.397l-1.156-76.906h51.715c9.365 0 14.587 10.817 8.763 18.149z"
+                            transform="translate(-27.722 -60.338)"
+                          />
+                          <path
+                            fill="#3ecf8e"
+                            d="M53.484 2.128c3.267-4.117 9.905-1.862 9.977 3.396l.508 76.907H12.902c-9.365 0-14.587-10.817-8.764-18.149z"
+                          />
+                        </svg>
+                        <span>Supabase</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "1.0s" }}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#F59E0B"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <rect x="2" y="3" width="20" height="7" rx="2" />
+                          <rect x="2" y="14" width="20" height="7" rx="2" />
+                          <line x1="6" y1="6.5" x2="6.01" y2="6.5" strokeWidth="2.5" />
+                          <line x1="6" y1="17.5" x2="6.01" y2="17.5" strokeWidth="2.5" />
+                          <path d="M14 6l-2.5 5h3L12 16" stroke="#FBBF24" strokeWidth="2" />
+                        </svg>
+                        <span>Server Actions</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 4. Cloud & Deployments */}
+                  <div className="skills-group">
+                    <h3 className="skills-group-title">Cloud & Deployments</h3>
+                    <div className="skills-container">
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.2s" }}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          style={{ height: "2.5rem", width: "auto" }}
+                          fill="none"
+                        >
+                          <path
+                            d="M12.24 3.75 3.03 19.5h4.63l4.58-7.9 2.29 3.95H11.5l-1.37 2.37h6.63L20.97 19.5H23L13.88 3.75h-1.64Z"
+                            fill="#FF9900"
+                          />
+                          <path
+                            d="m14.53 7.7-4.58 7.9h2.03l3.56-6.14 3.43 6.14h2.24L15.65 7.7h-1.12Z"
+                            fill="#FFB800"
+                          />
+                        </svg>
+                        <span>AWS Amplify</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.4s" }}
+                      >
+                        <i
+                          className="fas fa-route"
+                          style={{ color: "#FF9900" }}
+                        ></i>
+                        <span>Amazon Route 53</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.6s" }}
+                      >
+                        <i
+                          className="fas fa-cloud"
+                          style={{ color: "#FF9900" }}
+                        ></i>
+                        <span>Amazon CloudFront</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.8s" }}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
                           <path d="M24 22.525H0L12 1.475L24 22.525Z" />
                         </svg>
                         <span>Vercel</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* 5. Tools */}
+                  <div className="skills-group">
+                    <h3 className="skills-group-title">Tools</h3>
+                    <div className="skills-container">
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.2s" }}
+                      >
+                        <i
+                          className="fab fa-git-alt"
+                          style={{ color: "#F05032" }}
+                        ></i>
+                        <span>Git</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.4s" }}
+                      >
+                        <i
+                          className="fab fa-github"
+                          style={{ color: "#FFFFFF" }}
+                        ></i>
+                        <span>GitHub</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.6s" }}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          style={{ height: "2.5rem", width: "auto" }}
+                          fill="none"
+                        >
+                          <path
+                            d="M17.58 2.04a1.47 1.47 0 0 0-1.04.42l-9.1 8.35-4.49-3.4a.98.98 0 0 0-1.39.23L.36 9.42a.98.98 0 0 0 .23 1.39l3.87 2.94-3.87 2.94a.98.98 0 0 0-.23 1.39l1.2 1.78a.98.98 0 0 0 1.39.23l4.49-3.4 9.1 8.35a1.47 1.47 0 0 0 2.47-1.09V3.13a1.47 1.47 0 0 0-1.46-1.09z"
+                            fill="#007ACC"
+                          />
+                          <path
+                            d="M19.01 20.87 7.44 10.81l9.1-8.35a1.47 1.47 0 0 1 2.47 1.09v16.23a1.47 1.47 0 0 1-2.47 1.09z"
+                            fill="#1F9CF0"
+                          />
+                          <path
+                            d="m7.44 10.81 10.14-7.93a1.47 1.47 0 0 1 1.43 2.53L8.87 13.34 7.44 10.81z"
+                            fill="#0065A9"
+                          />
+                        </svg>
+                        <span>VS Code</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "0.8s" }}
+                      >
+                        <svg
+                          viewBox="0 0 32 32"
+                          style={{ height: "2.5rem", width: "auto" }}
+                        >
+                          <defs>
+                            <linearGradient
+                              id="viteA"
+                              x1="10.87%"
+                              x2="90.13%"
+                              y1="1.79%"
+                              y2="87.05%"
+                            >
+                              <stop offset="0%" stopColor="#41D1FF" />
+                              <stop offset="100%" stopColor="#BD34FE" />
+                            </linearGradient>
+                            <linearGradient
+                              id="viteB"
+                              x1="28.97%"
+                              x2="73.83%"
+                              y1="0%"
+                              y2="100%"
+                            >
+                              <stop offset="0%" stopColor="#FFEA83" />
+                              <stop offset="8.33%" stopColor="#FFDD35" />
+                              <stop offset="100%" stopColor="#FFA800" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            fill="url(#viteA)"
+                            d="M29.58 5.79 16.89 28.91a1.05 1.05 0 0 1-1.84 0L2.36 5.79a1.05 1.05 0 0 1 .92-1.55h8.49a1.05 1.05 0 0 1 .94.58l3.29 6.57 3.29-6.57a1.05 1.05 0 0 1 .94-.58h8.43a1.05 1.05 0 0 1 .92 1.55Z"
+                          />
+                          <path
+                            fill="url(#viteB)"
+                            d="M20.25 1.57 11.2 3.19a.52.52 0 0 0-.41.43L9.67 10.7a.53.53 0 0 0 .73.57l3.27-1.41-1.92 9.07a.53.53 0 0 0 .84.51l8.72-7.58a.53.53 0 0 0-.25-.9l-3.52-.77 2.99-7.98a.53.53 0 0 0-.28-.64Z"
+                          />
+                        </svg>
+                        <span>Vite</span>
+                      </div>
+                      <div
+                        className="skill-item floating"
+                        style={{ animationDelay: "1.0s" }}
+                      >
+                        <i
+                          className="fab fa-npm"
+                          style={{ color: "#CB3837" }}
+                        ></i>
+                        <span>npm</span>
                       </div>
                     </div>
                   </div>
@@ -1026,6 +1248,14 @@ function App() {
                       demoLink: "https://the-wild-oasis-hms.vercel.app/",
                       codeLink:
                         "https://github.com/nageshl-12/the-wild-oasis",
+                    },
+                    {
+                      title: "The Wild Oasis (Customer Booking Site)",
+                      desc: "A customer-facing cabin booking platform with cabin browsing, reservation management, Google OAuth authentication, and real-time availability tracking.",
+                      icon: "fa-mountain",
+                      demoLink: "https://the-wild-oasis.online/",
+                      codeLink:
+                        "https://github.com/nageshl-12/wild-oasis-cabin-booking",
                     },
                     {
                       title: "Online Code Compiler",
