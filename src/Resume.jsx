@@ -138,7 +138,7 @@ export default function Resume() {
               lineHeight: '1.4',
             }}
           >
-            <span>Chamarajanagara, Karnataka</span>
+            <span>Bengaluru, Karnataka</span>
             {' | '}
             <a href="mailto:nageshl15260@gmail.com" style={contactLinkStyle}>
               nageshl15260@gmail.com
